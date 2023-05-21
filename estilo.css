@@ -1,3 +1,26 @@
 body {
   background: #CCC;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas com largura igual */
+  gap: 10px; /* Espaçamento entre as colunas */
+}
+
+.coluna {
+  border: 1px solid black; /* Adicione uma borda para destacar as colunas */
+  padding: 10px; /* Adicione um espaçamento interno para o conteúdo */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 70vh; /* Define a altura do contêiner, para centralizar na tela inteira */
+}
+
+.elemento-centralizado {
+  /* Estilos do elemento centralizado */
+  margin: 0 auto; /* Centraliza horizontalmente usando margem automática */
+}
