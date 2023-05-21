@@ -30,7 +30,7 @@ class ProdutosDestaque extends Produto{
      // return this.nome + this.datadeCadastro + this.descricao + this.preco + this.imagemDestaque;
    }
 }   
-const produtosDestaque = new ProdutosDestaque("Boneca", "27-02-2023", "boneca da Hello Kitty", "R$ 49,99", "https://i.pinimg.com/originals/01/5b/81/015b817adfbf32e59ee12ac1b6f084a7.png");
+const produtosDestaque = new ProdutosDestaque("Boneca", "27-02-2023", "Boneca da Hello Kitty - Kuromi", "R$ 49,99", "https://seeklogo.com/images/K/kuromi-logo-68C9041203-seeklogo.com.png");
 //console.log(produtosDestaque.mostrarProdutosDestaque())
 
 

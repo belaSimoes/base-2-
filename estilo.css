@@ -1,5 +1,5 @@
 body {
-  background: #dbb2b2;
+  background: #d0bdda;
 }
 
 .grid-container {
@@ -9,7 +9,7 @@ body {
 }
 
 .coluna {
-  border: 1px solid black;
+  border: 1px solid rgb(28, 2, 36);
   padding: 10px; 
 }
 
@@ -27,5 +27,5 @@ body {
 
 .titulo-centralizado {
   text-align: center; 
-  background-color: white; 
+  background-color: rgb(125, 85, 151); 
 }
