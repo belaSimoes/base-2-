@@ -40,7 +40,7 @@ produtos.insertAdjacentHTML('afterbegin', produtosDestaque.mostrarProdutosDestaq
 
 class ProdutosdaLista extends Produto{
   constructor (nome, datadeCadastro, descricao,  preco, imagemDestaque, nome2, descricao2, preco2, nome3, descricao3, preco3, nome4, descricao4, preco4){
-    super(nome, datadeCadastro, descricao, preco, imagemDestaque)
+    super(nome, datadeCadastro, descricao, preco, imagemDestaque, nome2, descricao2, preco2, nome3, descricao3, preco3, nome4, descricao4, preco4)
     this.imagemDestaque = imagemDestaque;
     this.nome2 = nome2;
     this.descricao2 = descricao2;
