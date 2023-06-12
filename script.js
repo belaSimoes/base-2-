@@ -52,6 +52,42 @@ class ProdutosdaLista extends Produto{
     this.descricao4 = descricao4;
     this.preco4 = preco4;
   }
+
+  mostrarAtributos(){
+    try{
+    return this.atributos();
+    } catch (erro){
+      console.log(erro.stack)
+    }
+  } 
+
+  atributos() {
+    if (this.nome != "" && this.datadeCadastro != "" && this.descricao != "" && this.preco != "" && this.imagemDestaque != "" && this.nome2 != "" && this.descricao2 != "" && this.preco2 != "" && this.nome3 != "" && this.descricao3 != "" && this.preco3 != "" && this.nome4 != "" && this.descricao4 != "" && this.preco4 != ""){
+      return {
+        nome: this.nome,
+        datadeCadastro: this.datadeCadastro,
+        descricao: this.descricao,
+        preco: this.preco,
+        imagemDestaque: this.imagemDestaque,
+        nome2: this.nome2,
+        descricao2: this.descricao2,
+        preco2: this.preco2,
+        nome3: this.nome3,
+        descricao3: this.descricao3,
+        preco3: this.preco3,
+        nome4: this.nome4,
+        descricao4: this.descricao4,
+        preco4: this.preco4
+    };
+  } else {
+    throw new Error ("Algum campo não está preenchido :)")
+}
+  }
+
+
+
+
+
 mostrarListaProdutos() {
   return `
     
@@ -78,7 +114,12 @@ mostrarListaProdutos() {
 }
 }
 
+
+
+
 const produtosLIsta = new ProdutosdaLista("Boneca", "27-02-2023", "boneca da Hello Kitty", "R$ 49,99", "https://t1.uc.ltmcdn.com/pt/posts/5/6/5/desenhos_da_hello_kitty_para_colorir_9565_600.jpg", "Boneca Turma da Hello Kitty", "Boneca da Hello Kitty - Hello Kitty", "R$ 49,99", "Pelúcia Turma da Hello Kitty", "Boneca da Hello Kitty - Chococat", "R$ 39,99", "Boneca Turma da Hello Kitty", "Boneca da Hello Kitty - My Melody", "R$ 89,99");
+
+const atributos = produtosLIsta.mostrarAtributos()
 
 const listaProdutos = document.getElementById("lista-produtos")
 listaProdutos.insertAdjacentHTML('afterbegin', produtosLIsta.mostrarListaProdutos());
