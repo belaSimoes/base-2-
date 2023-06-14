@@ -1,4 +1,12 @@
  // divListaProduto.insertAdjacentHTML('afterbegin', '');
+ class MeuErro extends Error {
+  constructor(message){
+    super(message);
+    this.name = "Erro!";
+  }
+}
+
+
  class Produto {
   constructor (nome, datadeCadastro, descricao, preco){
   this.nome = nome;
@@ -117,7 +125,7 @@ mostrarListaProdutos() {
 
 
 
-const produtosLIsta = new ProdutosdaLista("Boneca", "27-02-2023", "boneca da Hello Kitty", "R$ 49,99", "https://t1.uc.ltmcdn.com/pt/posts/5/6/5/desenhos_da_hello_kitty_para_colorir_9565_600.jpg", "Boneca Turma da Hello Kitty", "Boneca da Hello Kitty - Hello Kitty", "R$ 49,99", "Pelúcia Turma da Hello Kitty", "Boneca da Hello Kitty - Chococat", "R$ 39,99", "Boneca Turma da Hello Kitty", "Boneca da Hello Kitty - My Melody", "R$ 89,99");
+const produtosLIsta = new ProdutosdaLista("", "27-02-2023", "boneca da Hello Kitty", "R$ 49,99", "https://t1.uc.ltmcdn.com/pt/posts/5/6/5/desenhos_da_hello_kitty_para_colorir_9565_600.jpg", "Boneca Turma da Hello Kitty", "Boneca da Hello Kitty - Hello Kitty", "R$ 49,99", "Pelúcia Turma da Hello Kitty", "Boneca da Hello Kitty - Chococat", "R$ 39,99", "Boneca Turma da Hello Kitty", "Boneca da Hello Kitty - My Melody", "R$ 89,99");
 
 const atributos = produtosLIsta.mostrarAtributos() 
 
