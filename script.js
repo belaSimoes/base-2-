@@ -19,8 +19,8 @@ mostrarProdutos (){
 }
 }
 
-const produto = new Produto("Boneca", "27-02-2023", "boneca da Hello Kitty", "R$ 49,99");
-console.log(produto.mostrarProdutos())
+
+//3
 
 class ProdutosDestaque extends Produto{
   constructor (nome, datadeCadastro, descricao,  preco, imagemDestaque){
@@ -28,6 +28,12 @@ class ProdutosDestaque extends Produto{
     this.imagemDestaque = imagemDestaque;
   }
 
+  mostrarAtributos(){
+    try{
+    return this.atributos();
+    } catch (erro){
+      console.log(erro.stack)
+    }
   } 
 
   atributos() {
@@ -43,6 +49,7 @@ class ProdutosDestaque extends Produto{
     throw new Error ("Algum campo não está preenchido :)")
 }
   }
+  
 
 
   
